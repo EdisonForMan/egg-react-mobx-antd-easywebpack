@@ -1,0 +1,18 @@
+{
+  "index.js": "/js/chunk/index.js",
+  "runtime.js": "/js/runtime.js",
+  "deps": {
+    "index.js": {
+      "js": [
+        "/js/runtime.js",
+        "/js/chunk/index.js"
+      ],
+      "css": []
+    }
+  },
+  "info": {
+    "publicPath": "/",
+    "buildPath": "\\dist",
+    "mapped": true
+  }
+}

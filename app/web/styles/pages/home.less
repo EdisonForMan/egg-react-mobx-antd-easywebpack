@@ -1,0 +1,194 @@
+@import '~styles/include/flexbox';
+
+#app {
+  height: 100%;
+  .page-main {
+    max-height: 100%;
+    overflow-y: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    .ant-layout-content {
+      padding: 10px;
+    }
+
+    .menuItem {
+      .flex-block();
+      .flex-align-items(center);
+    }
+  }
+
+  #main-content {
+    overflow-y: scroll;
+    padding: 18px;
+    background: #fff;
+    flex: 1;
+    border-radius: 4px;
+  }
+  .ant-breadcrumb {
+    margin-bottom: 12px;
+  }
+  // .ant-layout-sider {
+  //   overflow-y: scroll;
+  // }
+  .ant-layout-header {
+    height: 50px;
+    line-height: 50px;
+    .ant-menu.ant-menu-dark .ant-menu-item-selected,
+    .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+      background-color: unset;
+    }
+    .logo {
+      width: 182px;
+      height: 34px;
+      float: left;
+      background: rgba(255, 255, 255, 0.2);
+      text-align: center;
+      color: #fff;
+      line-height: 34px;
+      margin: 8px;
+      border-radius: 4px;
+    }
+    .ant-menu-horizontal {
+      line-height: 50px;
+      display: inline-block;
+    }
+    .avater-user {
+      margin: 0 16px;
+      float: right;
+      .ant-dropdown-trigger {
+        margin-left: 6px;
+      }
+    }
+  }
+
+  .ant-layout-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user {
+    color: #6b7f95 100%;
+    float: right;
+    font-size: 15px;
+    margin-right: 20px;
+    span {
+      cursor: pointer;
+      font-weight: 100;
+      font-size: 13px;
+    }
+  }
+
+  .main-content {
+    /*padding: 24px;
+        background: #fff;
+        width: 100%;
+        min-height: 300px;
+        border-radius: 4px;
+        box-shadow: 0px 2px 9px #d2d2d2;
+        border-radius: 4px;*/
+    /*   common   */
+    .action-container {
+      overflow: hidden;
+      margin-bottom: 10px;
+
+      .action-left-search {
+        display: inline-block;
+        .ant-btn {
+          margin-right: 4px;
+        }
+        .ant-btn:last-child {
+          margin-right: 0px;
+        }
+        .action-left-search-single {
+          display: inline-block;
+          line-height: 40px;
+          margin-right: 10px;
+          label {
+            margin-right: 4px;
+          }
+          .ant-select {
+            margin-right: 2px;
+          }
+          .ant-select:last-child {
+            margin-right: 0px;
+          }
+        }
+      }
+      .action-left-search-form {
+        display: inline-block;
+        .ant-row {
+          display: inline-block;
+          margin-bottom: 0px;
+          margin-right: 10px;
+          .ant-form-item-control-wrapper {
+            display: inline-block;
+            min-width: 140px;
+          }
+        }
+      }
+
+      .action-right-button {
+        margin-left: 6px;
+        line-height: 40px;
+        .ant-btn {
+          margin-right: 4px;
+        }
+        .ant-btn:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+
+    /*   table   */
+    .ant-table {
+      .ant-table-tbody {
+        .operator {
+          .ant-btn {
+            margin-right: 6px;
+          }
+          .ant-btn:last-child {
+            margin-right: 0px;
+          }
+        }
+        /*   icon   */
+        .ant-btn > .anticon + span,
+        .ant-btn > span + .anticon {
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+}
+
+/*  common-modal  */
+.action-container {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.ant-modal {
+  .ant-form {
+    .ant-form-item {
+      margin-bottom: 6px;
+    }
+  }
+  .ant-divider-horizontal.ant-divider-with-text-left:before {
+    width: 0;
+  }
+  .ant-divider-inner-text {
+    font-size: 14px;
+  }
+}
+
+/*  脱敏开关  */
+.desensitization {
+  margin-left: 8px;
+}

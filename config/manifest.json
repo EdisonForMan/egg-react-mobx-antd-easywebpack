@@ -1,0 +1,39 @@
+{
+  "app.css": "/public/css/app.821dd8d8.css",
+  "app.js": "/public/js/chunk/app.d50c951b.js",
+  "common.css": "/public/css/common.af479818.css",
+  "common.js": "/public/js/chunk/common.ac293204.js",
+  "login.css": "/public/css/login.07159080.css",
+  "login.js": "/public/js/chunk/login.a8640b0c.js",
+  "runtime.js": "/public/js/runtime.2df3fe69.js",
+  "img/bg.png": "/public/img/bg.3e6f3618.png",
+  "deps": {
+    "app.js": {
+      "js": [
+        "/public/js/runtime.2df3fe69.js",
+        "/public/js/chunk/common.ac293204.js",
+        "/public/js/chunk/app.d50c951b.js"
+      ],
+      "css": [
+        "/public/css/common.af479818.css",
+        "/public/css/app.821dd8d8.css"
+      ]
+    },
+    "login.js": {
+      "js": [
+        "/public/js/runtime.2df3fe69.js",
+        "/public/js/chunk/common.ac293204.js",
+        "/public/js/chunk/login.a8640b0c.js"
+      ],
+      "css": [
+        "/public/css/common.af479818.css",
+        "/public/css/login.07159080.css"
+      ]
+    }
+  },
+  "info": {
+    "publicPath": "/public/",
+    "buildPath": "\\public",
+    "mapped": true
+  }
+}

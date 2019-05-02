@@ -1,0 +1,83 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "antd": "^3.16.6",
+    "autobind-decorator": "^2.4.0",
+    "axios": "^0.18.0",
+    "egg": "^2.15.1",
+    "egg-cors": "^2.2.0",
+    "egg-scripts": "^2.11.0",
+    "egg-view-react-ssr": "^2.4.1",
+    "mobx": "^5.9.4",
+    "mobx-react": "^5.4.3",
+    "react": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^24.7.1",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "easywebpack": "^4.11.5",
+    "easywebpack-react": "^4.4.1",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "egg-webpack": "^4.4.9",
+    "egg-webpack-react": "^2.0.2",
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "moment": "^2.24.0",
+    "query-string": "^6.5.0",
+    "react-dom": "^16.8.6",
+    "react-hot-loader": "^4.8.4",
+    "react-router-config": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "shortid": "^2.2.14",
+    "superagent": "^5.0.5"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon",
+    "stop": "egg-scripts stop --title=egg-server-test",
+    "build": "easy build",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT"
+}

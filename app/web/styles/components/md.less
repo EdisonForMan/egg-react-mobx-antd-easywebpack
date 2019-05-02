@@ -1,0 +1,91 @@
+body {
+  background-color: #fff;
+}
+.markdown-body {
+  width: 100%;
+}
+.markdown-body img {
+  background-color: transparent;
+}
+div.mermaid {
+  text-align: center;
+}
+hr.footnotes-sep {
+  margin: 128px 0 32px;
+  height: 1px;
+}
+.footnotes {
+  padding-left: 16px;
+}
+.footnotes * {
+  font-size: 14px;
+}
+li.footnote-item > p {
+  margin: 8px 0;
+}
+.danger,
+.info,
+.success,
+.warning {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.danger > p:last-child,
+.info > p:last-child,
+.success > p:last-child,
+.warning > p:last-child {
+  margin-bottom: 0;
+}
+.success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #777;
+}
+ul.toc {
+  padding-left: 4px;
+}
+ul.toc li {
+  margin: 2px 0;
+}
+mark {
+  color: #000;
+  background-color: #ff0;
+  border: 1px solid #ff0;
+}
+.mk-img {
+  h1 {
+    margin-top: 8px;
+  }
+  div {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
+@media print {
+  article.markdown-body > * {
+    page-break-inside: avoid;
+  }
+}
