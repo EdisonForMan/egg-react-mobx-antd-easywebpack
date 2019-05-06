@@ -1,33 +1,33 @@
 {
-  "app.css": "/public/css/app.821dd8d8.css",
-  "app.js": "/public/js/chunk/app.d50c951b.js",
-  "common.css": "/public/css/common.af479818.css",
-  "common.js": "/public/js/chunk/common.ac293204.js",
-  "login.css": "/public/css/login.07159080.css",
-  "login.js": "/public/js/chunk/login.a8640b0c.js",
-  "runtime.js": "/public/js/runtime.2df3fe69.js",
-  "img/bg.png": "/public/img/bg.3e6f3618.png",
+  "app.css": "/public/css/app.css",
+  "app.js": "/public/js/chunk/app.js",
+  "common.css": "/public/css/common.css",
+  "common.js": "/public/js/chunk/common.js",
+  "login.css": "/public/css/login.css",
+  "login.js": "/public/js/chunk/login.js",
+  "runtime.js": "/public/js/runtime.js",
+  "img/bg.png": "/public/img/bg.png",
   "deps": {
     "app.js": {
       "js": [
-        "/public/js/runtime.2df3fe69.js",
-        "/public/js/chunk/common.ac293204.js",
-        "/public/js/chunk/app.d50c951b.js"
+        "/public/js/runtime.js",
+        "/public/js/chunk/common.js",
+        "/public/js/chunk/app.js"
       ],
       "css": [
-        "/public/css/common.af479818.css",
-        "/public/css/app.821dd8d8.css"
+        "/public/css/common.css",
+        "/public/css/app.css"
       ]
     },
     "login.js": {
       "js": [
-        "/public/js/runtime.2df3fe69.js",
-        "/public/js/chunk/common.ac293204.js",
-        "/public/js/chunk/login.a8640b0c.js"
+        "/public/js/runtime.js",
+        "/public/js/chunk/common.js",
+        "/public/js/chunk/login.js"
       ],
       "css": [
-        "/public/css/common.af479818.css",
-        "/public/css/login.07159080.css"
+        "/public/css/common.css",
+        "/public/css/login.css"
       ]
     }
   },

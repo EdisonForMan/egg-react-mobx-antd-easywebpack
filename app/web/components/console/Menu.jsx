@@ -16,7 +16,7 @@ import hoc from 'components/HOC/pageHeader';
 @inject(stores => ({
   store: stores.menuStore
 }))
-@hoc({ name: '菜单管理', className: 'page_menu' })
+@hoc({ name: 'Menu Management', className: 'page_menu' })
 @observer
 class MenuManagement extends Component {
   state = {
@@ -234,7 +234,7 @@ class MenuManagement extends Component {
                   icon="plus"
                   onClick={this.showMenuFormModal}
                 >
-                  新增菜单
+                  add
                 </Button>
               </span>
             </div>

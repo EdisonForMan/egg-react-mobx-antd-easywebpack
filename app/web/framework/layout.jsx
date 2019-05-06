@@ -5,7 +5,7 @@ export default class Layout extends Component {
     return (
       <html>
         <head>
-          <title>{this.props.title || '反欺诈-管理后台'}</title>
+          <title>{this.props.title || 'Content Manage System'}</title>
           <meta charSet="utf-8" />
           <meta
             name="viewport"

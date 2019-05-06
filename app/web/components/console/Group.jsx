@@ -13,7 +13,7 @@ import hoc from 'components/HOC/pageHeader';
 @inject(stores => ({
   store: stores.groupStore
 }))
-@hoc({ name: '用户组管理', className: 'page_group' })
+@hoc({ name: 'Group Management', className: 'page_group' })
 @observer
 class GroupManagement extends Component {
   state = {
@@ -170,7 +170,7 @@ class GroupManagement extends Component {
               icon="plus"
               onClick={this.showGroupFormModal}
             >
-              新增用户组
+              add
             </Button>
           </span>
         </div>

@@ -19,7 +19,7 @@ import { MENUS } from 'enums/Menu';
 import UpdatePasswordForm from 'components/common/UpdatePasswordForm';
 
 const { SubMenu } = Menu;
-const { Header, Content, Sider } = Layout;
+const { Header, Content, Sider, Footer } = Layout;
 
 @inject(stores => ({
   store: stores.userStore
@@ -98,7 +98,7 @@ class MainContainer extends Component {
    * 菜单树dom
    */
   exportMenuTree = () => {
-    const { currentMenu: MENUS } = this.props.store;
+    // const { currentMenu: MENUS } = this.props.store;
     const subMenuList = [],
       { defaultOpenKeys, defaultSelectedKeys } = this.state;
     for (let i = 0; i < MENUS.length; i++) {
@@ -169,7 +169,7 @@ class MainContainer extends Component {
    * @param key <String> 菜单key
    */
   getFatherPoint = key => {
-    const { currentMenu: MENUS } = this.props.store;
+    // const { currentMenu: MENUS } = this.props.store;
     let target = null;
     [...MENUS].map(item => {
       item.children &&
@@ -207,7 +207,7 @@ class MainContainer extends Component {
           } else if (v == '' && index == 0) {
             return (
               <Breadcrumb.Item key={`breadcrumb-${index}`}>
-                首页
+                Home
               </Breadcrumb.Item>
             );
           }
@@ -280,10 +280,10 @@ class MainContainer extends Component {
     return (
       <Layout className="page-main" style={{ display: 'flex' }}>
         <Header style={{ padding: 0 }}>
-          <div className="logo">反欺诈 - 管理后台</div>
+          <div className="logo">Content Manage System</div>
           <div className="avater-user">
             <span style={{ color: '#fff' }}>
-              hi,{store.currentUser.username}
+              hi , {store.currentUser.username || 'unknows'}
             </span>
             <Dropdown overlay={this.userMenu()}>
               <a>
@@ -303,6 +303,9 @@ class MainContainer extends Component {
             ) : (
               undefined
             )}
+            <Footer style={{ textAlign: 'center',padding: '12px 12px 2px 12px' }}>
+              ©2019 Created by GaobangShao
+            </Footer>
           </Content>
         </Layout>
         <Modal

@@ -14,7 +14,7 @@ import hoc from 'components/HOC/pageHeader';
 @inject(stores => ({
   store: stores.userStore
 }))
-@hoc({ name: '用户管理', className: 'page_user' })
+@hoc({ name: 'User Management', className: 'page_user' })
 @observer
 class UserManagement extends Component {
   state = {
@@ -57,7 +57,7 @@ class UserManagement extends Component {
           搜索
         </Button> */}
         <Button type="primary" icon="plus" onClick={this.showUserFormModal}>
-          新增用户
+          add
         </Button>
       </span>
     );

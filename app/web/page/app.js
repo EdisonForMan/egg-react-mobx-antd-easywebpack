@@ -24,7 +24,7 @@ import Menu from 'components/console/Menu';
 import MenuStore from 'stores/console/MenuStore';
 
 //  电商
-import EcommerceBill from 'components/ecommerce/EcommerceBill';
+/*import EcommerceBill from 'components/ecommerce/EcommerceBill';
 import EcommerceBillStore from 'stores/ecommerce/EcommerceBillStore';
 import EcommerceData from 'components/ecommerce/EcommerceData';
 import EcommerceDataStore from 'stores/ecommerce/EcommerceDataStore';
@@ -80,12 +80,12 @@ import WebManagementStore from 'stores/web/WebManagementStore';
 
 //  网查
 import WebDetectStore from 'stores/common/WebDetectStore';
-
+*/
 const createStores = (ctx, state) => ({
   userStore: new UserStore(ctx, state),
   groupStore: new GroupStore(ctx, state),
   menuStore: new MenuStore(ctx, state),
-  ecommerceBillStore: new EcommerceBillStore(ctx, state),
+  /*ecommerceBillStore: new EcommerceBillStore(ctx, state),
   ecommerceDataStore: new EcommerceDataStore(ctx, state),
   ecommercePendingDataStore: new EcommercePendingDataStore(ctx, state),
   accumulationFundHandledStore: new AccumulationFundHandledStore(ctx, state),
@@ -111,7 +111,7 @@ const createStores = (ctx, state) => ({
   carDisplayListStore: new CarDisplayListStore(ctx, state),
   carWebDetectListStore: new CarWebDetectListStore(ctx, state),
   webManagementStore: new WebManagementStore(ctx, state),
-  webDetectStore: new WebDetectStore(ctx, state)
+  webDetectStore: new WebDetectStore(ctx, state)*/
 });
 
 const routes = [
@@ -131,7 +131,7 @@ const routes = [
         path: '/home/menu',
         component: Menu
       },
-      {
+      /*{
         path: '/home/ecommercerawdata',
         component: EcommercePendingData
       },
@@ -198,7 +198,7 @@ const routes = [
       {
         path: '/home/webManagement',
         component: WebManagement
-      }
+      }*/
     ]
   }
 ];
