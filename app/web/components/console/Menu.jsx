@@ -31,7 +31,7 @@ class MenuManagement extends Component {
   };
 
   componentDidMount() {
-    this.fetchList();
+    // this.fetchList();
   }
 
   async getBasicOption() {

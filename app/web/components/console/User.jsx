@@ -28,7 +28,7 @@ class UserManagement extends Component {
   };
 
   async componentDidMount() {
-    await this.fetchList();
+    // await this.fetchList();
   }
 
   searchLeft() {

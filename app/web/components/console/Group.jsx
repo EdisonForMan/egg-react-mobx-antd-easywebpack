@@ -26,7 +26,7 @@ class GroupManagement extends Component {
   };
 
   componentDidMount() {
-    this.fetchList();
+    // this.fetchList();
   }
 
   async getBasicOption() {
