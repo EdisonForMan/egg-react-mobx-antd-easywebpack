@@ -55,7 +55,7 @@ class NormalLoginForm extends Component {
     const { loading } = this.state;
     return (
       <Form onSubmit={this.handleSubmit} className="login-form">
-        <div className="title">江西恩凯金属有限公司</div>
+        <div className="title">Content Manage System</div>
         <FormItem>
           {getFieldDecorator('userName', {
             rules: [
@@ -70,7 +70,7 @@ class NormalLoginForm extends Component {
               addonBefore={
                 <Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />
               }
-              placeholder="邮箱／账号"
+              placeholder="email/account"
             />
           )}
         </FormItem>
@@ -89,7 +89,7 @@ class NormalLoginForm extends Component {
                 <Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />
               }
               type="password"
-              placeholder="登录密码"
+              placeholder="password"
             />
           )}
         </FormItem>
@@ -100,7 +100,7 @@ class NormalLoginForm extends Component {
             className="login-form-button"
             loading={loading}
           >
-            登录
+            Sign In
           </Button>
         </FormItem>
       </Form>

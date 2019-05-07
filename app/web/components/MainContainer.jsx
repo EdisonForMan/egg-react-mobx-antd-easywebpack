@@ -11,7 +11,7 @@ import {
   Icon,
   Breadcrumb,
   Button,
-  message
+  message,
 } from 'antd';
 import { renderRoutes } from 'react-router-config';
 import { observer, inject } from 'mobx-react';
@@ -22,7 +22,7 @@ const { SubMenu } = Menu;
 const { Header, Content, Sider, Footer } = Layout;
 
 @inject(stores => ({
-  store: stores.userStore
+  store: stores.userStore,
 }))
 @observer
 class MainContainer extends Component {
@@ -43,7 +43,7 @@ class MainContainer extends Component {
     //  router渲染开关
     routerSwitch: false,
     //  菜单渲染开关
-    menuSwitch: false
+    menuSwitch: false,
   };
 
   async componentDidMount() {
@@ -75,7 +75,7 @@ class MainContainer extends Component {
       defaultSelectedKeys: [defaultSelectedKeys],
       BREADCRUMB,
       routerSwitch: true,
-      menuSwitch: true
+      menuSwitch: true,
     });
     //  获取信息后打开路由
   }
@@ -90,7 +90,7 @@ class MainContainer extends Component {
     const defaultOpenKeys = this.getFatherPoint(defaultSelectedKeys);
     this.setState({
       defaultOpenKeys: [defaultOpenKeys],
-      defaultSelectedKeys: [defaultSelectedKeys]
+      defaultSelectedKeys: [defaultSelectedKeys],
     });
   }
 
@@ -159,7 +159,7 @@ class MainContainer extends Component {
   switchMenu = ({ key }) => {
     const { history } = this.props;
     this.setState({
-      defaultSelectedKeys: [key]
+      defaultSelectedKeys: [key],
     });
     history.push(`/home${key}`);
   };
@@ -227,7 +227,7 @@ class MainContainer extends Component {
         window.location.replace(`/login`);
       },
       okText: '确认',
-      cancelText: '取消'
+      cancelText: '取消',
     });
   }
 
@@ -242,7 +242,7 @@ class MainContainer extends Component {
           const { passwordOld, passwordNew } = values;
           await this.props.store.updatePassword({
             userId: currentUser.id,
-            password: passwordNew
+            password: passwordNew,
           });
           message.info(`密码修改成功`);
           setTimeout(() => {
@@ -303,7 +303,9 @@ class MainContainer extends Component {
             ) : (
               undefined
             )}
-            <Footer style={{ textAlign: 'center',padding: '12px 12px 2px 12px' }}>
+            <Footer
+              style={{ textAlign: 'center', padding: '12px 12px 2px 12px' }}
+            >
               ©2019 Created by GaobangShao
             </Footer>
           </Content>
@@ -320,7 +322,7 @@ class MainContainer extends Component {
             </Button>,
             <Button key="submit" type="primary" onClick={this.updatePassword}>
               提交
-            </Button>
+            </Button>,
           ]}
         >
           <UpdatePasswordForm
