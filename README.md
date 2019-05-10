@@ -11,4 +11,4 @@ _yarn install 安装_<br/>
 _yarn run dev 本地调试_<br/>
 _yarm run build 生产打包_
 
-_参考自[egg-react-webpack-boilerplate](https://github.com/easy-team/egg-react-webpack-boilerplate)_
+_参考自[easywebpack](https://github.com/easy-team/easywebpack)_
