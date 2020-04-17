@@ -1,6 +1,6 @@
 import 'styles/pages/home.less';
 // 国际化
-import { LocaleProvider } from 'antd';
+import { ConfigProvider } from 'antd';
 import zh_CN from 'antd/lib/locale-provider/zh_CN';
 import 'moment/locale/zh-cn';
 
@@ -214,14 +214,14 @@ const clientRender = () => {
     ReactDOM.hydrate(
       EASY_ENV_IS_DEV ? (
         <AppContainer>
-          <LocaleProvider locale={zh_CN}>
+          <ConfigProvider locale={zh_CN}>
             <App />
-          </LocaleProvider>
+          </ConfigProvider>
         </AppContainer>
       ) : (
-          <LocaleProvider locale={zh_CN}>
+          <ConfigProvider locale={zh_CN}>
             <App />
-          </LocaleProvider>
+          </ConfigProvider>
         ),
       document.getElementById('app')
     );

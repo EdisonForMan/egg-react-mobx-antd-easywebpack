@@ -1,40 +1,37 @@
 {
-    "presets": [
-        "@babel/preset-env",
-        "@babel/preset-react"
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": [
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
     ],
-    "plugins": [
-        [
-            "@babel/plugin-proposal-decorators",
-            {
-                "legacy": true
-            }
-        ],
-        [
-            "@babel/plugin-proposal-class-properties",
-            {
-                "loose": true
-            }
-        ],
-        [
-            "@babel/plugin-proposal-optional-chaining",
-            {
-                "loose": true
-            }
-        ],
-        "@babel/plugin-transform-runtime",
-        [
-            "add-module-exports",
-            {
-                "addDefaultProperty": true
-            }
-        ],
-        [
-            "import",
-            {
-                "libraryName": "antd",
-                "style": "css"
-            }
-        ]
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": true
+      }
+    ],
+    [
+      "@babel/plugin-proposal-optional-chaining",
+      {
+        "loose": true
+      }
+    ],
+    "@babel/plugin-transform-runtime",
+    [
+      "add-module-exports",
+      {
+        "addDefaultProperty": true
+      }
+    ],
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": "css"
+      }
     ]
+  ]
 }
